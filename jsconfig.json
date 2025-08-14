@@ -1,7 +1,11 @@
 {
   "compilerOptions": {
+    "baseUrl": ".", // 👈 tells TS that paths are relative to project root
+    "jsx": "react-jsx", // for modern React (React 17+)
     "paths": {
-      "@/*": ["./*"]
+      "@/*": [
+        "./*"
+      ] // maps "@/something" to "<root>/something"
     }
   }
 }
