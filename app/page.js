@@ -2,22 +2,12 @@ import Link from "next/link";
 import MainComponent from "../components/MainComponent";
 import Section from "../components/Section";
 import ButtonLink from "../components/ButtonLink";
+import { skills, projects } from "../utils/mockData";
 
 
 
 
-const skills = [
-  { title: "Frontend Development", desc: "React, Next.js, Tailwind CSS" },
-  { title: "Data Visualization", desc: "Charts, Dashboards, D3.js" },
-  { title: "Statistical Analysis", desc: "R, Python, Data Modeling" },
-  { title: "UI/UX Design", desc: "User flows, Prototyping, Accessibility" },
-  { title: "Communication", desc: "Teaching, Technical Training, Cross-functional Collaboration" }
-];
 
-const projects = [
-  { title: "Project Title 1", desc: "Brief description of what the project does and the technologies used." },
-  { title: "Project Title 2", desc: "Brief description of what the project does and the technologies used." }
-];
 
 export default function Home() {
   return (
@@ -25,7 +15,7 @@ export default function Home() {
 
       {/* Hero */}
       <Section bgColor="bg-neutral-100">
-        <h1 className="text-2xl md:text-4xl font-bold">
+        <h1 className="text-2xl md:text-4xl font-bold text-blue-600">
           Welcome to DAS Consultancy, Bridging Data & Design
         </h1>
         <p className="text-lg text-gray-600 max-w-xl mx-auto">
@@ -55,25 +45,28 @@ export default function Home() {
       <Section>
         <h2 className="text-3xl font-bold text-center mb-3 md:mb-6">Featured Projects</h2>
         <div className="grid md:grid-cols-2 gap-8">
-          {projects.map((proj, i) => (
-            <div key={i} className="bg-white shadow rounded-xl overflow-hidden">
-              <div className="h-48 bg-gray-200 flex items-center justify-center">
-                <span className="text-gray-500">Project Screenshot</span>
+          {projects.map((proj, i) => {
+            const Icon = proj.icon;
+            return (
+              <div key={i} className="bg-white shadow rounded-xl overflow-hidden">
+                <div className={`h-48 flex items-center justify-center ${proj.bgColor}`}>
+                  <Icon className={`w-16 h-16 ${proj.iconColor}`} />
+                </div>
+                <div className="p-6">
+                  <h3 className="text-xl font-semibold mb-2">{proj.title}</h3>
+                  <p className="text-gray-600 mb-4">{proj.desc}</p>
+                  <Link href="#" className="text-blue-600 hover:underline">
+                    View Project →
+                  </Link>
+                </div>
               </div>
-              <div className="p-6">
-                <h3 className="text-xl font-semibold mb-2">{proj.title}</h3>
-                <p className="text-gray-600 mb-4">{proj.desc}</p>
-                <Link href="#" className="text-blue-600 hover:underline">
-                  View Project →
-                </Link>
-              </div>
-            </div>
-          ))}
+            );
+          })}
         </div>
       </Section>
 
       {/* About */}
-      <Section bgColor="bg-neutral-50">
+      <Section bgColor="bg-white">
         <p className="max-w-2xl mx-auto text-lg text-gray-700 mb-6">
           With over 7 years building modern web apps and 10+ years in statistics, I create interfaces
           that make data meaningful.
