@@ -9,23 +9,6 @@ export const skills = [
 ];
 
 export const projects = [
-
-    {
-        title: "Sales Dashboard",
-        desc: "Created an interactive sales dashboard using Power BI as part of a DataCamp project, visualizing regional sales trends and key performance metrics to support data-driven decisions.",
-        icon: BarChart3,
-        bgColor: "bg-blue-100",
-        iconColor: "text-blue-600",
-        href: "https://www.datacamp.com/datalab/dashboard"
-    },
-    {
-        title: "Data Analyst Professional Practical Exam Submission (DataCamp)",
-        desc: "Completed DataCamp’s Data Analyst Professional certification practical exam, delivering insights from a real-world dataset through cleaning, analysis, visualization, and statistical interpretation using Python and Pandas.",
-        icon: Activity,
-        bgColor: "bg-red-100",
-        iconColor: "text-red-600",
-        href: "https://www.datacamp.com/datalab/dashboard"
-    },
     {
         title: "UI Components Library",
         desc: "Developed a private UI components library for De Lijn to ensure consistent design and faster development across internal applications. The library includes reusable, accessible components built with modern frontend technologies, enabling teams to maintain a unified look and feel while reducing development time.",
@@ -66,4 +49,21 @@ export const projects = [
         iconColor: "text-pink-600",
         href: "https://www.delijn.be"
     },
+    {
+        title: "Sales Dashboard",
+        desc: "Created an interactive sales dashboard using Power BI as part of a DataCamp project, visualizing regional sales trends and key performance metrics to support data-driven decisions.",
+        icon: BarChart3,
+        bgColor: "bg-blue-100",
+        iconColor: "text-blue-600",
+        href: "https://www.datacamp.com/datalab/dashboard"
+    },
+    {
+        title: "Data Analyst Professional Practical Exam Submission (DataCamp)",
+        desc: "Completed DataCamp’s Data Analyst Professional certification practical exam, delivering insights from a real-world dataset through cleaning, analysis, visualization, and statistical interpretation using Python and Pandas.",
+        icon: Activity,
+        bgColor: "bg-red-100",
+        iconColor: "text-red-600",
+        href: "https://www.datacamp.com/datalab/dashboard"
+    },
+
 ];

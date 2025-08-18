@@ -13,7 +13,7 @@ export default function About() {
 
                 Over the years, I’ve worked with diverse teams and industries, blending analytical thinking with creative problem-solving to deliver solutions that are both data-driven and user-focused.
 
-                Whether it’s building a high-performance web application, creating interactive dashboards, or optimizing a user journey, my goal is the same: to make technology work seamlessly for people — and to turn information into action.
+                Whether it’s building a high-performance web application, creating interactive dashboards, or optimizing a user journey, my goal is the same: to make technology work seamlessly for people and to turn information into action.
             </p>
             <ButtonLink
                 href="/files/DOurhamane_Abdou_Sanda_CV.pdf"
