@@ -1,6 +1,12 @@
 import React from "react";
 import MainComponent from "../../components/MainComponent";
 
+export const metadata = {
+    title: "Contact DAS Consultancy",
+    description:
+        "Get in touch with DAS Consultancy to discuss your project and explore how data-driven design can bring your ideas to life.",
+};
+
 export default function Contact() {
     return (
         <MainComponent>
