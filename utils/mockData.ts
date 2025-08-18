@@ -15,35 +15,40 @@ export const projects = [
         desc: "Created an interactive sales dashboard using Power BI as part of a DataCamp project, visualizing regional sales trends and key performance metrics to support data-driven decisions.",
         icon: BarChart3,
         bgColor: "bg-blue-100",
-        iconColor: "text-blue-600"
+        iconColor: "text-blue-600",
+        href: "https://www.datacamp.com/datalab/dashboard"
     },
     {
         title: "Data Analyst Professional Practical Exam Submission (DataCamp)",
         desc: "Completed DataCamp’s Data Analyst Professional certification practical exam, delivering insights from a real-world dataset through cleaning, analysis, visualization, and statistical interpretation using Python and Pandas.",
         icon: Activity,
         bgColor: "bg-red-100",
-        iconColor: "text-red-600"
+        iconColor: "text-red-600",
+        href: "https://www.datacamp.com/datalab/dashboard"
     },
     {
         title: "UI Components Library",
         desc: "Developed a private UI components library for De Lijn to ensure consistent design and faster development across internal applications. The library includes reusable, accessible components built with modern frontend technologies, enabling teams to maintain a unified look and feel while reducing development time.",
         icon: Layout,
         bgColor: "bg-purple-100",
-        iconColor: "text-purple-600"
+        iconColor: "text-purple-600",
+        href: "https://www.delijn.be"
     },
     {
         title: "Account-Based Ticketing (ABT) System - De Lijn",
         desc: "A smart ticketing system for De Lijn that lets passengers tap in and out using a transit card, mobile phone, or contactless bank card. The system automatically calculates fares based on the journey and links them to the passenger’s account, enabling a seamless, cash-free travel experience.",
         icon: Ticket,
         bgColor: "bg-yellow-100",
-        iconColor: "text-yellow-600"
+        iconColor: "text-yellow-600",
+        href: "https://www.delijn.be/nl/tickets/"
     },
     {
         title: "De Lijn Flex",
         desc: "An on-demand transport service by De Lijn designed to connect rural and hard-to-reach areas with the main public transport network. It offers flexible scheduling and seamless integration with bus, tram, and train services.",
         icon: Bus,
         bgColor: "bg-green-100",
-        iconColor: "text-green-600"
+        iconColor: "text-green-600",
+        href: "https://www.delijn.be/nl/content/reisinfo/flex/"
     },
     {
         title: "De Lijn Routeplanner",
@@ -58,6 +63,7 @@ export const projects = [
         desc: "Digital bus stop boards for De Lijn that provide real-time information about nearby stops, bus routes, and connections. The system integrates network maps, platform layouts, and stop-specific details, making it easy for passengers to navigate and plan their journey.",
         icon: Signpost,
         bgColor: "bg-pink-100",
-        iconColor: "text-pink-600"
+        iconColor: "text-pink-600",
+        href: "https://www.delijn.be"
     },
 ];
