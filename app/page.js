@@ -32,14 +32,14 @@ export default function Home() {
           <ButtonLink href="/about" bg="blue-600" text="white" hoverBg="blue-700" ariaLabel="Learn more about DAS Consultancy" extraClasses="md:max-w-[133px] md:truncate">
             Learn more about DAS Consultancy
           </ButtonLink>
-          <ButtonLink href="/about" bg="blue-600" text="white" hoverBg="blue-700" ariaLabel="Contact DAS Consultancy">
+          <ButtonLink href="/contact" bg="blue-600" text="white" hoverBg="blue-700" ariaLabel="Contact DAS Consultancy">
             Contact Me
           </ButtonLink>
         </div>
       </Section>
 
       {/* Skills */}
-      <Section className="max-w-6xl grid sm:grid-cols-2 lg:grid-cols-4">
+      <Section className="max-w-6xl grid sm:grid-cols-2 lg:grid-cols-4 !p-0">
         {skills.map((skill, i) => (
           <div key={i} className="bg-white shadow rounded-xl p-6">
             <h2 className="text-xl font-semibold mb-2">{skill.title}</h2>
@@ -62,7 +62,7 @@ export default function Home() {
                 <div className="p-6 ">
                   <h2 className="text-xl font-semibold mb-2">{proj.title}</h2>
                   <p className="text-gray-600 mb-4">{proj.desc}</p>
-                  <Link href={proj.href} className="text-blue-600 hover:underline">
+                  <Link href={proj.href} className="text-blue-600 hover:underline" target="_blank" rel="noopener noreferrer">
                     View Project →
                   </Link>
                 </div>
@@ -92,7 +92,7 @@ export default function Home() {
       </Section>
 
       {/* Contact */}
-      <Section bgColor="bg-blue-600 shadow text-white">
+      <Section bgColor="bg-blue-600" className=" shadow rounded-xl text-white p-6">
         <h2 className="text-3xl font-bold mb-4">Let’s Work Together</h2>
         <p className="max-w-xl mx-auto mb-6">
           Got a project in mind? I’d love to hear about it and see how we can bring it to life.

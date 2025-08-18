@@ -10,6 +10,8 @@ const ButtonLink = ({
     fullWidthOnMobile = false,
     ariaLabel,
     extraClasses = "",
+    target,
+    rel,
 }) => {
     const baseClasses = "px-6 py-2 rounded-lg transition-colors duration-200";
 
@@ -25,6 +27,8 @@ const ButtonLink = ({
         <Link
             aria-label={ariaLabel}
             href={href}
+            target={target}
+            rel={rel}
             className={classNames(baseClasses, bgClass, textClass, hoverClass, widthClasses, extraClasses)}
         >
             {children}
