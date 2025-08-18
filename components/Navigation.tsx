@@ -4,7 +4,7 @@ import { FC } from "react";
 
 const Navigation: FC = () => {
     return (
-        <nav className="flex items-center justify-between w-full bg-blue-600 shadow-blue text-white p-4 rounded-lg">
+        <nav className="flex items-center justify-between w-full bg-blue-600 hover:bg-blue-700 shadow-blue text-white p-4 rounded-lg">
             <div className="text-lg font-bold">DAS Consultancy</div>{/* have to add a log in place of the tex */}
             <div className="flex space-x-4">
                 <Link href="/" className=" hover:text-gray-900">

@@ -8,6 +8,8 @@ const ButtonLink = ({
     text = "white",   // Tailwind text color
     hoverBg,          // Tailwind hover bg (optional, auto-calculated if not set)
     fullWidthOnMobile = false,
+    ariaLabel,
+    extraClasses = "",
 }) => {
     const baseClasses = "px-6 py-2 rounded-lg transition-colors duration-200";
 
@@ -21,8 +23,9 @@ const ButtonLink = ({
 
     return (
         <Link
+            aria-label={ariaLabel}
             href={href}
-            className={classNames(baseClasses, bgClass, textClass, hoverClass, widthClasses)}
+            className={classNames(baseClasses, bgClass, textClass, hoverClass, widthClasses, extraClasses)}
         >
             {children}
         </Link>
