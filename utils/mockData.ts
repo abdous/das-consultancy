@@ -1,14 +1,22 @@
-import { BarChart3, Activity, Layout, Ticket, Bus, Map, Signpost } from "lucide-react";
+import { BarChart3, Activity, Layout, Ticket, Bus, Map, Signpost, ShoppingCart } from "lucide-react";
 
 export const skills = [
     { title: "Frontend Development", desc: "React, Next.js, Tailwind CSS" },
+    { title: "UI/UX Design", desc: "User flows, Prototyping, Accessibility" },
+    { title: "Communication", desc: "Teaching, Technical Training, Cross-functional Collaboration" },
     { title: "Data Visualization", desc: "Charts, Dashboards, D3.js" },
     { title: "Statistical Analysis", desc: "R, Python, Data Modeling" },
-    { title: "UI/UX Design", desc: "User flows, Prototyping, Accessibility" },
-    { title: "Communication", desc: "Teaching, Technical Training, Cross-functional Collaboration" }
 ];
 
 export const projects = [
+    {
+        title: "E-Commerce Platform",
+        desc: "Built a modern e-commerce website featuring product browsing, shopping cart, and checkout functionality. The platform provides a responsive and intuitive user experience, enabling customers to easily explore products, manage their cart, and complete secure purchases.",
+        icon: ShoppingCart,
+        bgColor: "bg-blue-100",
+        iconColor: "text-blue-600",
+        href: "https://e-commerce-kappa-amber-85.vercel.app/"
+    },
     {
         title: "UI Components Library",
         desc: "Developed a private UI components library for De Lijn to ensure consistent design and faster development across internal applications. The library includes reusable, accessible components built with modern frontend technologies, enabling teams to maintain a unified look and feel while reducing development time.",
