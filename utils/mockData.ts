@@ -1,4 +1,4 @@
-import { BarChart3, Activity, Layout, Ticket, Bus, Map, Signpost, ShoppingCart } from "lucide-react";
+import { BarChart3, Activity, Layout, Ticket, Bus, Map, Signpost, ShoppingCart, Hammer } from "lucide-react";
 
 export const skills = [
     { title: "Frontend Development", desc: "React, Next.js, Tailwind CSS" },
@@ -17,6 +17,15 @@ export const projects = [
         iconColor: "text-blue-600",
         href: "https://e-commerce-kappa-amber-85.vercel.app/"
     },
+    {
+        title: "Batimar Renovation",
+        desc: "Developed a professional website for a renovation company, showcasing their services, expertise, and completed projects. The site provides a clean and responsive design, ensuring potential clients can easily learn about the company, explore areas of expertise, and get in touch for inquiries.",
+        icon: Hammer,
+        bgColor: "bg-yellow-100",
+        iconColor: "text-yellow-600",
+        href: "https://batimar-renovation-6esv.vercel.app/"
+    },
+
     {
         title: "UI Components Library",
         desc: "Developed a private UI components library for De Lijn to ensure consistent design and faster development across internal applications. The library includes reusable, accessible components built with modern frontend technologies, enabling teams to maintain a unified look and feel while reducing development time.",
