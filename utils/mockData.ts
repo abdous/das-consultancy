@@ -15,7 +15,7 @@ export const projects = [
         icon: ShoppingCart,
         bgColor: "bg-blue-100",
         iconColor: "text-blue-600",
-        href: "https://e-commerce-kappa-amber-85.vercel.app/"
+        href: "https://e-commerce-abdousandadourhamane-85.vercel.app/"
     },
     {
         title: "Batimar Renovation",
